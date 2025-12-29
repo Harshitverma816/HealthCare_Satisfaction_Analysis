@@ -1,166 +1,113 @@
-🩺 Healthcare Satisfaction Data Analytics Project
-
-📘 Overview
-
-This project focuses on analyzing hospital satisfaction data to uncover insights about patient experiences and hospital performance across the United States.
-The complete analytics pipeline was built — from data loading and cleaning in Python, to SQL-based exploration in MySQL (XAMPP), followed by data visualization and dashboard creation in Power BI, and finally project documentation and presentation using Gamma.
-
-The goal was to identify key trends, improve healthcare benchmarking, and provide a data-driven overview for decision-making.
-
-📊 Dataset
-
-Source: 2016 U.S. Hospital Survey Dataset
-
-Description: The dataset contains hospital-level survey results, star ratings, and response metrics from the HCAHPS (Hospital Consumer Assessment of Healthcare Providers and Systems) survey.
-
-Key Columns:
-
-Facility ID – Unique identifier for each hospital
-
-Facility Name – Hospital name
-
-State – U.S. state code
-
-Patient_Survey_Star_Rating – Overall patient rating (1–5 stars)
-
-HCAHPS_Linear_Mean_Value – Mean score of responses
-
-HCAHPS_Answer_Percent – Percentage of positive responses
-
-Response_Rate_Percent – Response rate for survey
-
-🧰 Tools and Technologies
-Tool	Purpose
-Python (Pandas, NumPy, Matplotlib)	Data loading, cleaning, and EDA
-MySQL (XAMPP)	SQL queries and data management
-Power BI	Interactive dashboard creation
-Gamma App	Project report and presentation
-Excel	Supporting data preparation
-⚙️ Steps and Workflow
-1. Data Loading and Cleaning (Python)
-
-Imported dataset using pandas.
-
-Handled missing values in Patient_Survey_Star_Rating, HCAHPS_Linear_Mean_Value, and HCAHPS_Answer_Percent using state-wise mean imputation.
-
-Performed feature formatting and removed duplicates.
-
-2. Exploratory Data Analysis (EDA)
-
-Analyzed distribution of star ratings across states.
-
-Correlation analysis between Star Rating, Linear Mean, and Response Rate.
-
-Visualized trends using bar charts and boxplots.
-
-3. Database Integration (MySQL / XAMPP)
-
-Loaded the cleaned dataset into MySQL using SQLAlchemy.
-
-Created and executed 10+ SQL queries for:
-
-Aggregating ratings by state and facility.
-
-Filtering top-performing hospitals.
-
-Identifying trends and averages by response rate.
-
-Performing advanced queries using GROUP BY, JOIN, and HAVING.
-
-4. Dashboard Development (Power BI)
-
-Connected Power BI to the MySQL database.
-
-Designed a 2-page dashboard:
-
-Overview Page: KPIs (Total Facilities, Avg Rating, Avg Response Rate, Avg Linear Mean)
-
-Benchmarking Page: Top N hospitals by State and Star Rating
-
-Question Deep-Dive Page: Drill-down visualizations of satisfaction dimensions
-
-Used slicers for State, Question Category, Survey Response Category, ZIP Code , and Star Rating filters.
-
-Added hospital logos, clean color theme.
-
-5. Report & Presentation (Gamma App)
-
-Summarized project objectives, findings, and dashboard visuals.
-
-Created a professional PowerPoint-style presentation.
-
-Added recommendations for improving patient satisfaction and hospital performance.
-
-📈 Dashboard Insights
-
-Average Patient Rating: 3.2 stars across all hospitals.
-
-Top States: California and Texas showed highest satisfaction scores.
-
-Improvement Areas: Low response rate linked to lower star ratings.
-
-Benchmarking: High-rated hospitals maintained a consistent linear mean score above 85%.
-
-🧭 How to Run the Project
-
-Clone the Repository
-
-git clone https://github.com/Harshitverma816/healthcare-satisfaction-analysis.git
-cd healthcare-satisfaction-analysis
-
-
-Set Up Python Environment
-
-pip install -r requirements.txt
-
-
-Run Python Scripts
-
-Load and clean data: python data_cleaning.py
-
-Perform EDA: python eda_analysis.py
-
-Import Data into MySQL
-
-Start XAMPP → Open MySQL.
-
-Run upload_data.sql script to import dataset.
-
-Explore Dashboard
-
-Open Power BI → Load .pbix file.
-
-Interact with filters, KPIs, and benchmarking visuals.
-
-View Project Presentation
-
-Access the final Gamma presentation via shared link or .pdf.
-
-📋 Results Summary
-
-Improved data quality by handling missing values accurately.
-
-Created a dynamic Power BI dashboard for real-time healthcare benchmarking.
-
-Identified actionable insights to enhance patient satisfaction.
-
-Presented the findings through an interactive Gamma report.
-
-💡 Future Recommendations
-
-Integrate data from additional years for trend analysis.
-
-Incorporate hospital type and ownership as analytical dimensions.
-
-Use predictive modeling (e.g., regression) to forecast future ratings.
-
-Deploy the dashboard on Power BI Service for live updates.
-
-👨‍💻 Author
+🏥 **Healthcare Patient Satisfaction Analysis**
+End-to-End Data Analytics Project | Python · SQL · Power BI
+
+📌 **Project Overview**
+Patient satisfaction is a critical indicator of healthcare quality and hospital performance.
+This project analyzes U.S. hospital patient satisfaction survey data to identify the key factors that influence patient experience and overall hospital ratings.
+
+The goal is not just visualization, but decision-oriented insights that healthcare administrators and analysts can act on.
+
+🎯 **Business Problem**
+Hospitals collect large volumes of patient feedback, but:
+- Which factors actually drive patient satisfaction?
+- Do hospital ownership types perform differently?
+- Are there regional patterns in patient experience?
+This project answers those questions using data-driven analysis.
+
+❓ **Key Business Questions**
+- What survey dimensions most strongly influence overall patient satisfaction?
+- How do government, non-profit, and private hospitals compare?
+- Are there state-level or regional disparities in patient experience?
+-Which hospital attributes are consistently associated with higher ratings?
+
+📂 **Dataset**
+- Source: U.S. Hospital Patient Satisfaction Survey
+- Type: Structured survey & hospital metadata
+- Records: Thousands of hospitals across multiple U.S. states
+- Key Features:
+  - Patient satisfaction scores
+  - Hospital ownership type
+  - Location (state-level)
+  - Care responsiveness & communication metrics
+
+🛠 **Tools & Technologies**
+- **Python** – Data cleaning, preprocessing, EDA
+  - Pandas, NumPy, Matplotlib, Seaborn
+- **SQL (MySQL)** – Analytical queries & aggregations
+- **Power BI** – Interactive dashboard & KPI visualization
+- **Excel** – Data validation & quick checks
+- **PowerPoint** – Executive-ready presentation
+
+🔄 **Project Workflow**
+
+1️⃣ **Data Cleaning & EDA (Python)**
+- Handled missing and inconsistent survey responses
+- Converted categorical responses into analyzable formats
+- Performed exploratory analysis to identify patterns and correlations
+- Visualized distribution of satisfaction metrics and ownership types
+
+2️⃣ **SQL Analysis**
+- Designed structured queries to:
+  - Compare satisfaction scores across hospital types
+  - Identify top and bottom performing states
+  - Aggregate patient experience metrics
+- Ensured queries reflect real-world analytical use cases
+
+3️⃣ **Power BI Dashboard**
+- Built an interactive dashboard featuring
+  - Overall satisfaction KPIs
+  - Hospital ownership comparison
+  - State-wise performance analysis
+  - Patient experience driver metrics
+- Designed for decision-makers, not just visuals
+
+4️⃣ **Reporting & Presentation**
+- Created a professional analytical report summarizing:
+  - Methodology
+  - Key findings
+  - Business implications
+- Developed a presentation suitable for stakeholders or interviews
+
+📊 **Key Insights**
+- Patient communication and staff responsiveness are the strongest drivers of satisfaction
+- Private hospitals consistently outperform government hospitals on patient experience
+- Significant state-level variation exists in satisfaction scores
+- High-performing hospitals show consistency across multiple care dimensions, not just one metric
+
+📈 **Power BI Dashboard**
+The dashboard enables users to:
+- Compare hospital satisfaction across ownership types
+- Identify underperforming regions
+-Drill down into patient experience drivers
+
+📁 **Repository Structure**
+
+├── data/                  # Raw and cleaned datasets
+├── python/                # Data cleaning & EDA notebooks
+├── sql/                   # SQL queries used for analysis
+├── powerbi/               # Power BI dashboard (.pbix)
+├── report/                # Analytical report
+├── presentation/          # Executive presentation
+└── README.md
+
+▶️ **How to Run This Project**
+
+1. Clone the repository
+2. Run Python notebooks for data cleaning and EDA
+3. Execute SQL queries on MySQL server (optional)
+4. Open the Power BI .pbix file to explore the dashboard
+
+🚀 **Why This Project Matters**
+This project demonstrates:
+- End-to-end analytical thinking
+- Real-world healthcare domain exposure
+- Ability to translate data into actionable insights
+- Strong visualization and communication skills
+
+👤 **Author** 
 
 Harshit Verma
-Data Analyst | Healthcare Analytics | Power BI & SQL Developer
-📧 harsh692002@gmail.com
-
-🔗 LinkedIn : Harshit Verma
- | GitHub: Harshitverma816
+Aspiring Data Analyst | Python · SQL · Power BI
+**Email** : harsh692002@gmail.com
+**LinkedIn** : [Harshit Verma](https://www.linkedin.com/in/harshit-verma-468b94398)
+**GitHub** : (Harshitverma816)(https://github.com/Harshitverma816)
