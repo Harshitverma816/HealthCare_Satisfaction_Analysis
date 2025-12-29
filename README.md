@@ -1,4 +1,5 @@
 🏥 **Healthcare Patient Satisfaction Analysis**
+
 End-to-End Data Analytics Project | Python · SQL · Power BI
 
 📌 **Project Overview**
@@ -83,12 +84,19 @@ The dashboard enables users to:
 📁 **Repository Structure**
 
 ├── data/                  # Raw and cleaned datasets
+
 ├── python/                # Data cleaning & EDA notebooks
+
 ├── sql/                   # SQL queries used for analysis
+
 ├── powerbi/               # Power BI dashboard (.pbix)
+
 ├── report/                # Analytical report
+
 ├── presentation/          # Executive presentation
+
 └── README.md
+
 
 ▶️ **How to Run This Project**
 
@@ -108,6 +116,9 @@ This project demonstrates:
 
 Harshit Verma
 Aspiring Data Analyst | Python · SQL · Power BI
+
 **Email** : harsh692002@gmail.com
+
 **LinkedIn** : [Harshit Verma](https://www.linkedin.com/in/harshit-verma-468b94398)
+
 **GitHub** : (Harshitverma816)(https://github.com/Harshitverma816)
