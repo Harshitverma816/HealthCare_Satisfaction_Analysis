@@ -121,4 +121,4 @@ Aspiring Data Analyst | Python · SQL · Power BI
 
 **LinkedIn** : [Harshit Verma](https://www.linkedin.com/in/harshit-verma-468b94398)
 
-**GitHub** : (Harshitverma816)(https://github.com/Harshitverma816)
+**GitHub** : https://github.com/Harshitverma816
